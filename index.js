@@ -22,6 +22,14 @@ app.get('/getBlob',(req,res)=>{
      
    })
 })
+app.get('/getUser',(req,res)=>{
+    return res.status(200).json({
+        "name":"sahil patel",
+        "branch":"Information technology",
+        "sem":6
+     
+   })
+})
 
 app.listen(process.env.PORT,()=>{
     console.log("server is started");
