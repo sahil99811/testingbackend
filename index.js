@@ -8,7 +8,7 @@ dotenv.config();
 app.use(express.json());
 
 app.get('/getBlob',(req,res)=>{
-   return res.send.json({
+   return res.status(200).json({
         "name":"sahil patel",
         "branch":"Information technology",
         "sem":6
